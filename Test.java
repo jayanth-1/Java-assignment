@@ -17,8 +17,7 @@ public void filesAndFilesInSubdirectories(String directoryName,String pattern){
               Pattern r = Pattern.compile(pattern);
               // Now create matcher object.
               Matcher m = r.matcher(file.getName());   // matching file name with pattern
-              if(m.matches()){                         // if matches
-                                      
+              if(m.matches()){                            // if matches
                System.out.println(file.getAbsolutePath()); // printing absolute path
              }
              }
@@ -26,7 +25,7 @@ public void filesAndFilesInSubdirectories(String directoryName,String pattern){
                 filesAndFilesInSubdirectories(file.getAbsolutePath(),pattern); // recursivley searching files directories & subdirectories
             }
         }
-        
+
 
 }
 
@@ -47,8 +46,6 @@ while(true) {
 
  obj.filesAndFilesInSubdirectories(directory_name,pattern);
 }
-
-
 }
 
 }
